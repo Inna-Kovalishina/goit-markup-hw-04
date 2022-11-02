@@ -99,7 +99,6 @@ body {
 }
 
 .section {
-    max-width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -457,8 +456,11 @@ header {
 }
 
 .example-item {
-    flex-basis: calc((100% - 30px * 2) / 3);
-    border: #EEEEEE;
+    flex-basis: calc((100% - 30px * 2) / 3);    
+}
+
+.example-card {
+    display: block;
 }
 
 .example-card>div {
