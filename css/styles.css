@@ -182,25 +182,40 @@ header {
     margin-left: 50px;
 } */
 
-.list-header .item:not(:last-child) {
-    margin-right: 50px;
+.list-header .item-header:not(:last-child) {
+    margin-right: 30px;
 }
 
-.nav-contact {
-    display: block;
+.item-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
 }
 
-.nav-contact:hover,
-.nav-contact:focus {
+.icon-mail {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+
+.link-mail:hover,
+.link-mail:focus {
     color: var(--accent-color);
 }
+
 
 /* Стилізація Hero */
 .hero-studio {
@@ -270,13 +285,26 @@ header {
 }
 
 /* Стилізація секції "Особливості" */
-.section-title.hidden {
-    margin-bottom: 0;
-}
 
 .list.feature {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+}
+
+.feature-item {
+    display: block;
+    max-width: 270px;
+}
+
+.feature-picture {
+    margin-bottom: 30px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .feature-title {
@@ -339,9 +367,10 @@ header {
     margin-right: 30px;
 }
 
-.employee-photo,
-.employee-position {
-    margin-bottom: 30px;
+.employee-info {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .employee-name {
@@ -360,6 +389,70 @@ header {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;    
+}
+
+.icon-social {
+    fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
+}
+
+
+/* Стилізація секції "Постійні клієнти" */
+.client-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;    
+}
+
+.client-item {
+    flex-basis: calc((100% - 30px * 5) / 6);
+}
+
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.icon-client {
+    fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 
@@ -369,12 +462,24 @@ header {
     background-color:var(--secondary-background-color);
 }
 
-.contacts-footer {
+/* Стилізація контактної інформації */
+.contacts-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.contacts-footer .logo {
+.contacts-item {
+    display: block;
+}
+
+.contacts-item:not(:last-child) {
+    margin-right: 70px;
+}
+
+.contacts-item .logo {
     display: block;
     margin-bottom: 20px;
 }
@@ -404,6 +509,44 @@ header {
 
 .contact {
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* Стилізація блоку соціальних мереж */
+.networcs {
+    display: block;
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+
+.networks-text {
+    color: var(--primary-background-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    }
+
+.social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--primary-background-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-social {
+    fill: currentColor;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
 }
 
 
